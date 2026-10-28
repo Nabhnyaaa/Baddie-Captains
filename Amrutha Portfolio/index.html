@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kolli Sai Amrutha</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Sans:opsz,wght@9..40,400..600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try{if(localStorage.getItem("look")==="ember")document.documentElement.setAttribute("data-look","ember")}catch(e){}</script>
+</head>
+<body>
+
+<div class="stage" id="stage" aria-hidden="true">
+  <div class="blob b-pink"><i></i></div>
+  <div class="blob b-violet"><i></i></div>
+  <div class="blob b-low"><i></i></div>
+  <div class="blob b-edge"><i></i></div>
+  <div class="blob b-pale"><i></i></div>
+</div>
+<div class="grain" aria-hidden="true"></div>
+<div class="glow" id="glow" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="logo" href="#top">Amrutha</a>
+  <nav class="links" id="links" aria-label="Sections">
+    <span class="pill" id="pill"></span>
+    <a href="#about" data-s="about">About</a>
+    <a href="#skills" data-s="skills">Skills</a>
+    <a href="#work" data-s="work">Projects</a>
+    <a href="#contact" data-s="contact">Contact</a>
+  </nav>
+  <button class="theme" id="theme" type="button" aria-label="Switch to the Ember theme" title="Switch theme"><span class="sw"></span></button>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow rise" style="--i:0">R.V. College of Engineering &middot; CSE &middot; 2025&ndash;2029</p>
+        <h1 aria-label="Kolli Sai Amrutha">
+          <span class="ln"><span style="--i:0">Kolli Sai</span></span>
+          <span class="ln alt"><span style="--i:1">Amrutha</span></span>
+        </h1>
+        <p class="role rise" style="--i:3">
+          <span>Building intelligent systems with</span>
+          <span class="swap" id="swap"><span class="swap-list" id="swapList">
+            <span>edge hardware</span>
+            <span>computer vision</span>
+            <span>retrieval pipelines</span>
+            <span>physics-informed models</span>
+          </span></span>
+        </p>
+        <div class="cta rise" style="--i:4">
+          <a class="btn solid" href="#work">See projects
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h12M11 5l5 5-5 5"/></svg>
+          </a>
+          <a class="btn glassy" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="cluster" aria-hidden="true">
+        <span class="orb" style="--s:40;--x:2;--y:6;--b:0" data-d="26"><i class="ball o1"></i></span>
+        <span class="orb" style="--s:22;--x:68;--y:1;--b:2" data-d="46"><i class="ball o2"></i></span>
+        <span class="orb" style="--s:34;--x:55;--y:29;--b:4" data-d="20"><i class="ball o3"></i></span>
+        <span class="orb" style="--s:24;--x:12;--y:58;--b:1" data-d="38"><i class="ball o4"></i></span>
+        <span class="orb" style="--s:27;--x:43;--y:66;--b:3" data-d="32"><i class="ball o5"></i></span>
+      </div>
+    </div>
+
+    <div class="marq rv" aria-hidden="true">
+      <div class="marq-track" id="mq">
+        <div class="grp">
+          <span>Edge computing</span><span>Computer vision</span><span>Physics-informed networks</span><span>RAG pipelines</span><span>Image restoration</span><span>ESP32</span><span>PyTorch</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="about">
+    <div class="wrap">
+      <div class="sec-head rv"><h2>About</h2></div>
+      <div class="about">
+        <div class="glass about-copy rv spot">
+          <p>I study computer science at R.V. College of Engineering, Bengaluru, and I like systems that sense, decide and act.</p>
+          <p class="small">My interests are end-to-end intelligent systems, edge computing and ML models. That has meant ESP32 boards talking to Python over serial, computer vision on live video, retrieval pipelines on a vector database, and neural networks that respect the physics of ocean data.</p>
+        </div>
+        <div class="glass facts rv spot" style="--d:1">
+          <div class="fact"><b><span data-count="9.65" data-dec="2">9.65</span></b><small>CGPA</small></div>
+          <div class="fact"><b>2025&ndash;29</b><small>B.E. in Computer Science, RVCE</small></div>
+          <div class="fact"><b><span data-count="4" data-dec="0">4</span></b><small>Projects built</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="skills">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <h2>Skills</h2>
+        <p class="lead">Every tile starts locked. Click one to unlock it, clear a zone to earn its badge, and level up the rank as you go.</p>
+      </div>
+
+      <div class="glass hud rv">
+        <div class="ring" role="img" aria-label="Skills unlocked">
+          <svg viewBox="0 0 84 84" aria-hidden="true"><circle class="tr" cx="42" cy="42" r="36"/><circle class="pg" id="ringPg" cx="42" cy="42" r="36"/></svg>
+          <div class="num"><b id="cnt">0</b><small id="tot">/21</small></div>
+        </div>
+        <div class="meta">
+          <span class="mono">Rank</span>
+          <strong id="rank">Newcomer</strong>
+          <div class="xpbar"><span id="xpfill"></span></div>
+          <span class="mono dim" id="xptxt">0 / 210 XP</span>
+        </div>
+        <div class="hud-btns">
+          <button class="btn glassy sm" id="unlockAll" type="button">Unlock all</button>
+          <button class="btn glassy sm" id="resetSk" type="button">Reset</button>
+        </div>
+      </div>
+
+      <div class="zones rv" id="zones" role="group" aria-label="Skill zones"></div>
+      <div class="skill-grid rv" id="skillGrid" style="--d:1"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="work">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <h2>Projects</h2>
+        <p class="lead">Four balls are bouncing around the arena. Catch one and click it to unlock the project inside.</p>
+      </div>
+      <div class="pg">
+        <div class="arena glass rv" id="arena">
+          <div class="arena-hud">
+            <span class="mono">Arena</span>
+            <span class="pips" id="pips" aria-hidden="true"></span>
+            <span class="hud-r"><span class="mono" id="pcount">0 / 4 unlocked</span><button type="button" class="lockall" id="lockAll" disabled>Lock all</button></span>
+          </div>
+          <p class="arena-hint">Balls slow down when you hover over them.</p>
+        </div>
+        <aside class="glass dp rv" id="dp" aria-live="polite" style="--d:1"></aside>
+      </div>
+    </div>
+  </section>
+
+  <div class="fx" id="fx" aria-hidden="true"></div>
+
+  <section class="sec contact" id="contact">
+    <div class="wrap">
+      <div class="glass rv">
+        <h2>Say hello</h2>
+        <p class="lead">Email is the quickest way to reach me.</p>
+        <div class="mail-row">
+          <span class="mail" id="mail">saiamruthakolli@gmail.com</span>
+          <button class="copy" id="copy">Copy email</button>
+        </div>
+        <div class="links2">
+          <a href="https://github.com/Amrutha-0612" target="_blank" rel="noopener">GitHub &middot; Amrutha-0612</a>
+          <a href="mailto:saiamruthakolli@gmail.com">Open in mail app</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Kolli Sai Amrutha</span>
+    <span>R.V. College of Engineering, Bengaluru</span>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
