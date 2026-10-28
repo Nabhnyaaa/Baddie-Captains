@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirtan Muralidhara</title>
+    <!-- Fonts from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav>
+        <a href="#top" class="logo">KM</a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact" class="nav-btn">Say hi</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <header class="hero" id="top">
+        <div class="hero-left">
+            <p class="hand-note">hey there, I'm</p>
+            <h1>Kirtan<br><span class="underline">Muralidhara</span></h1>
+            <p class="hero-text">
+                Engineering student who likes building things that actually work,
+                from neural networks in C to little ESP32 gadgets.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn yellow">See my work</a>
+                <a href="#contact" class="btn white">Contact me</a>
+            </div>
+        </div>
+
+        <!-- College ID card style box -->
+        <div class="id-card">
+            <div class="id-top">STUDENT ID</div>
+            <div class="id-photo">KM</div>
+            <h3>Kirtan Muralidhara</h3>
+            <table>
+                <tr><td>College</td><td>RVCE, Bengaluru</td></tr>
+                <tr><td>Branch</td><td>CSE (AI &amp; ML)</td></tr>
+                <tr><td>Batch</td><td>2025 – 2029</td></tr>
+                <tr><td>SGPA</td><td>9.3 / 9.1</td></tr>
+            </table>
+            <span class="sticker">3rd sem!</span>
+        </div>
+    </header>
+
+    <!-- ===== MOVING STRIP ===== -->
+    <div class="ticker">
+        <div class="ticker-track">
+            <span>C ✦ Python ✦ PyTorch ✦ ESP32 ✦ HTML ✦ CSS ✦ Git ✦ Machine Learning ✦</span>
+            <span>C ✦ Python ✦ PyTorch ✦ ESP32 ✦ HTML ✦ CSS ✦ Git ✦ Machine Learning ✦</span>
+        </div>
+    </div>
+
+    <main>
+
+        <!-- ===== ABOUT ===== -->
+        <section id="about">
+            <h2>A bit about me</h2>
+            <div class="notebook">
+                <p>
+                    I'm a second-year student at R.V. College of Engineering, studying
+                    Computer Science with a focus on AI &amp; ML.
+                </p>
+                <p>
+                    I learn best by building. Most of my projects started as "can I make this?"
+                    and ended with a lot of debugging and a working demo.
+                </p>
+                <p>
+                    Outside coding, I like reading about investing and how businesses grow.
+                    My goal is to get placed as a software / AI engineer.
+                </p>
+                <span class="margin-note">← that's me in short!</span>
+            </div>
+        </section>
+
+        <!-- ===== PROJECTS ===== -->
+        <section id="projects">
+            <h2>Things I've built</h2>
+            <div class="cards">
+
+                <div class="card c1">
+                    <span class="card-num">01</span>
+                    <h3>NeuroLatent</h3>
+                    <p>A deep learning model that predicts how a student will do on the next question. LSTM + attention, 74.6% accuracy.</p>
+                    <p class="stack">Python · PyTorch</p>
+                </div>
+
+                <div class="card c2">
+                    <span class="card-num">02</span>
+                    <h3>CMatLib</h3>
+                    <p>My own neural network library, written fully in C. It can also be used from Python.</p>
+                    <p class="stack">C · Python</p>
+                </div>
+
+                <div class="card c3">
+                    <span class="card-num">03</span>
+                    <h3>OceanEmbed</h3>
+                    <p>Our Smart India Hackathon project. Finds ocean temperature below the surface using satellite data.</p>
+                    <p class="stack">Deep Learning · SIH 2026</p>
+                </div>
+
+                <div class="card c4">
+                    <span class="card-num">04</span>
+                    <h3>FreshSenseAI</h3>
+                    <p>An ESP32 box with sensors that tells you if your stored food is still fresh.</p>
+                    <p class="stack">ESP32 · IoT · ML</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== SKILLS ===== -->
+        <section id="skills">
+            <h2>What I work with</h2>
+            <div class="stickers">
+                <span class="s-yellow">C</span>
+                <span class="s-pink">Python</span>
+                <span class="s-blue">PyTorch</span>
+                <span class="s-green">ESP32</span>
+                <span class="s-yellow">HTML</span>
+                <span class="s-pink">CSS</span>
+                <span class="s-blue">Git &amp; GitHub</span>
+                <span class="s-green">MATLAB</span>
+                <span class="s-yellow">Arduino</span>
+            </div>
+        </section>
+
+        <!-- ===== ACHIEVEMENTS ===== -->
+        <section id="achievements">
+            <h2>Proud moments</h2>
+            <ul class="checklist">
+                <li>Selected in the RVCE round of Smart India Hackathon 2026</li>
+                <li>Took part in the National Entrepreneurship Challenge, IIT Bombay</li>
+                <li>Wrote research papers for two of my projects</li>
+                <li>9.3 and 9.1 SGPA in my first two semesters</li>
+            </ul>
+        </section>
+
+        <!-- ===== CONTACT ===== -->
+        <section id="contact" class="contact-box">
+            <h2>Let's build something!</h2>
+            <p>Got a project idea or an internship? I'd love to hear about it.</p>
+            <div class="hero-buttons">
+                <a href="mailto:your.email@example.com" class="btn yellow">Email</a>
+                <a href="https://github.com/your-username" target="_blank" class="btn white">GitHub</a>
+                <a href="https://linkedin.com/in/your-profile" target="_blank" class="btn white">LinkedIn</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>made with HTML, CSS &amp; a lot of chai ☕</p>
+        <a href="#top">back to top ↑</a>
+    </footer>
+
+</body>
+</html>
