@@ -39,7 +39,7 @@ To view the portfolio locally:
 
 Connect with us on:
 - [GitHub](https://github.com/Nabhnyaaa)
-- [LinkedIn](https://www.linkedin.com/in/nabhnya-agarwal)
+- [LinkedIn](www.linkedin.com/in/nabhanya-agarwal)
 
 ## License
 
